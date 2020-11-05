@@ -6,15 +6,13 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    var data = [
-        Data(title: "teste 1"),
-        Data(title: "teste 2"),
-        Data(title: "teste 3"),
-    ]
+    var ItemArray = [Item]()
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     
     override func viewDidLoad() {
@@ -23,7 +21,12 @@ class ViewController: UIViewController {
         tableView.delegate = self
         tableView.register(UINib(nibName: K.cellNibName, bundle: nil), forCellReuseIdentifier: K.reusableIdentifier)
         
+        loadItems()
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        loadItems()
     }
     
 
@@ -31,17 +34,29 @@ class ViewController: UIViewController {
         
     }
     
+    func loadItems(){
+        if let request : NSFetchRequest<Item> = Item.fetchRequest() {
+            do {
+                ItemArray = try context.fetch(request)
+                print("Dados carregados")
+            } catch {
+                print("Erro ao carregar dados: \(error)")
+            }
+        }
+        tableView.reloadData()
+    }
+    
 }
 
 // MARK: - TableView DataSource Methods
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count
+        return ItemArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: K.reusableIdentifier, for: indexPath) as! QRCodeItemTableViewCell
-        cell.titleTextLabel.text = data[indexPath.row].title
+        cell.titleTextLabel.text = ItemArray[indexPath.row].title
         return cell
     }
 }

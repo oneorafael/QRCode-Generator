@@ -6,7 +6,13 @@
 //
 
 import Foundation
+import CoreData
+
 struct Data {
     var title: String
+    
+}
+
+func SaveEverything(){
     
 }

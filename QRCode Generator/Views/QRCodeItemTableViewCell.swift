@@ -13,7 +13,7 @@ class QRCodeItemTableViewCell: UITableViewCell {
     @IBOutlet weak var titleTextLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        view.layer.cornerRadius = view.frame.size.height / 8
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
