@@ -17,10 +17,10 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pyB-yY-RAw">
-                        <rect key="frame" x="16" y="8" width="288" height="67"/>
+                        <rect key="frame" x="17" y="8" width="286" height="67"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beP-fV-Ab1">
-                                <rect key="frame" x="17" y="22" width="254" height="21"/>
+                                <rect key="frame" x="8" y="23" width="270" height="22"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -28,18 +28,18 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="beP-fV-Ab1" secondAttribute="bottom" constant="24" id="jPz-rc-Hu7"/>
-                            <constraint firstItem="beP-fV-Ab1" firstAttribute="leading" secondItem="pyB-yY-RAw" secondAttribute="leading" constant="17" id="maM-yp-bx8"/>
-                            <constraint firstItem="beP-fV-Ab1" firstAttribute="top" secondItem="pyB-yY-RAw" secondAttribute="top" constant="22" id="xOv-wV-7xJ"/>
-                            <constraint firstAttribute="trailing" secondItem="beP-fV-Ab1" secondAttribute="trailing" constant="17" id="xVh-u9-1ln"/>
+                            <constraint firstItem="beP-fV-Ab1" firstAttribute="top" secondItem="pyB-yY-RAw" secondAttribute="top" constant="23" id="SDP-GD-iD2"/>
+                            <constraint firstItem="beP-fV-Ab1" firstAttribute="leading" secondItem="pyB-yY-RAw" secondAttribute="leading" constant="8" id="exc-GD-tMV"/>
+                            <constraint firstAttribute="bottom" secondItem="beP-fV-Ab1" secondAttribute="bottom" constant="22" id="jgR-NZ-Tbm"/>
+                            <constraint firstAttribute="trailing" secondItem="beP-fV-Ab1" secondAttribute="trailing" constant="8" id="n0c-Ba-mCh"/>
                         </constraints>
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="pyB-yY-RAw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="BpD-Xg-XY0"/>
-                    <constraint firstItem="pyB-yY-RAw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="NGA-rs-dUg"/>
-                    <constraint firstAttribute="trailing" secondItem="pyB-yY-RAw" secondAttribute="trailing" constant="16" id="jwY-Rc-L9n"/>
-                    <constraint firstAttribute="bottom" secondItem="pyB-yY-RAw" secondAttribute="bottom" constant="8" id="p5b-BU-i0S"/>
+                    <constraint firstItem="pyB-yY-RAw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="0w2-cU-1dn"/>
+                    <constraint firstAttribute="bottom" secondItem="pyB-yY-RAw" secondAttribute="bottom" constant="8" id="JZ1-Pq-hDU"/>
+                    <constraint firstItem="pyB-yY-RAw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="17" id="QZL-nt-swc"/>
+                    <constraint firstAttribute="trailing" secondItem="pyB-yY-RAw" secondAttribute="trailing" constant="17" id="ZhK-Iz-o9n"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

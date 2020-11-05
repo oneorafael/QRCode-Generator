@@ -38,6 +38,7 @@ class NewItemViewController: UIViewController {
         } catch {
            print("Erro ao salvar: \(error)")
         }
+        
         navigationController?.popToRootViewController(animated: true)
     }
     
