@@ -9,4 +9,5 @@ import Foundation
 struct K {
     static let cellNibName = "QRCodeItemTableViewCell"
     static let reusableIdentifier = "itemCell"
+    static let qrCodeDetailSegue = "qrcodeContentDetail"
 }

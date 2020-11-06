@@ -77,14 +77,24 @@ extension ViewController: UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: K.qrCodeDetailSegue, sender: self)
+       tableView.deselectRow(at: indexPath, animated: true)
+   }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == K.qrCodeDetailSegue {
+            let vc = segue.destination as! qrcodeDetailViewController
+            if let indexPath = tableView.indexPathForSelectedRow {
+                vc.selectedItem = ItemArray[indexPath.row]
+            }
+        }
+        
+    }
+    
 }
 
 //MARK: - TableView Delegate Methods
- func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
-    tableView.deselectRow(at: indexPath, animated: true)
-    
-}
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
