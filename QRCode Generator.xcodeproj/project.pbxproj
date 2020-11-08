@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67673EE725585A2A005865E5 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 67673EE625585A2A005865E5 /* .gitignore */; };
 		6772A34A2552515600036FAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6772A3492552515600036FAD /* AppDelegate.swift */; };
 		6772A34C2552515600036FAD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6772A34B2552515600036FAD /* SceneDelegate.swift */; };
 		6772A34E2552515600036FAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6772A34D2552515600036FAD /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		67673EE625585A2A005865E5 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		6772A3462552515600036FAD /* QRCode Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QRCode Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6772A3492552515600036FAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6772A34B2552515600036FAD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 		6772A33D2552515600036FAD = {
 			isa = PBXGroup;
 			children = (
+				67673EE625585A2A005865E5 /* .gitignore */,
 				6772A3482552515600036FAD /* QRCode Generator */,
 				6772A3472552515600036FAD /* Products */,
 			);
@@ -169,6 +172,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67673EE725585A2A005865E5 /* .gitignore in Resources */,
 				6772A3682552557200036FAD /* QRCodeItemTableViewCell.xib in Resources */,
 				6772A3562552515D00036FAD /* LaunchScreen.storyboard in Resources */,
 				6772A3532552515D00036FAD /* Assets.xcassets in Resources */,
